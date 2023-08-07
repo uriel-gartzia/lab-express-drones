@@ -1,37 +1,86 @@
 body {
-  padding: 50px;
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  height: 50px;
+}
+
+.main {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 50px 0 50px;
 }
 
 #home-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background-image: url(https://www.oneair.es/wp-content/uploads/2020/01/normativa-drones-espana-aesa-1030x521.jpg);
   background-repeat: no-repeat;
-  background-size: unset;
+  background-size: cover;
 }
 
 #home-title {
-  color: white;
-  text-align: center;
-  margin-top: 1em;
+  color: rgb(141, 18, 18);
   font-size: 2.5em;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .botones {
- 
- color: black;
- margin-left: 4px;
- margin-right: 4px;
- font-size: 1.2em
-
-}
-
-#btn-container {
- text-align: center;
- margin-top: -20px;
-
+  color: rgb(255, 255, 255);
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 1.2em;
 }
 
 a {
   color: #00b7ff;
+}
+
+.allDrones {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.drone {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 250px;
+  width: 200px;
+  margin-right: 10px;
+  align-content: space-between;
+  border: solid 1px black;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 25px;
+  column-gap: 25px;
+}
+
+.btn {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(123, 66, 0);
+  color: white;
+  width: 100px;
 }
