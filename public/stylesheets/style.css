@@ -3,6 +3,35 @@ body {
   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
 }
 
+#home-body {
+  background-image: url(https://www.oneair.es/wp-content/uploads/2020/01/normativa-drones-espana-aesa-1030x521.jpg);
+  background-repeat: no-repeat;
+  background-size: unset;
+}
+
+#home-title {
+  color: white;
+  text-align: center;
+  margin-top: 1em;
+  font-size: 2.5em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.botones {
+ 
+ color: black;
+ margin-left: 4px;
+ margin-right: 4px;
+ font-size: 1.2em
+
+}
+
+#btn-container {
+ text-align: center;
+ margin-top: -20px;
+
+}
+
 a {
   color: #00b7ff;
 }
