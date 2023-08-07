@@ -2,7 +2,14 @@
 
 <ul>
     {{#each this.allDrones}}
-    <li><a href="/drones/{{this._id}}/details">{{this.name}}</a></li>
+    <li>{{this.name}}</li>
+    <li>{{this.propellers}}</li>
+    <li>{{this.maxSpeed}}</li>
+    <li><a href="/drones/{{this._id}}/edit">Edit</a></li>
+    <form action="/drones/{{this._id}}/delete" method="post"><button>Delete</button></form>
+    
     {{/each}}
+    
+    
 </ul>
 
