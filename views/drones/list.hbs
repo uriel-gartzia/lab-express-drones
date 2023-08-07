@@ -1,15 +1,22 @@
+<div class="main">
+
+    <div class="content">
+
+ 
 <h1>Available drones</h1>
 
-<ul>
-    {{#each this.allDrones}}
-    <li>{{this.name}}</li>
-    <li>{{this.propellers}}</li>
-    <li>{{this.maxSpeed}}</li>
-    <li><a href="/drones/{{this._id}}/edit">Edit</a></li>
-    <form action="/drones/{{this._id}}/delete" method="post"><button>Delete</button></form>
-    
-    {{/each}}
-    
-    
-</ul>
+<div class="allDrones">
 
+    {{#each this.allDrones}}
+    <div class="drone">
+    <h3>{{this.name}}</h3>
+    <p>{{this.propellers}}</p>
+    <p>{{this.maxSpeed}}</p>
+    <p><a href="/drones/{{this._id}}/edit">Edit</a></p>
+    <form action="/drones/{{this._id}}/delete" method="post"><button>Delete</button></form>
+    </div>
+    {{/each}}
+    </div>
+
+   </div>
+</div>
